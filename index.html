@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foul Counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <p>Silaturahim Futsal Desa 1</p>
+    </div>
+    <h1>Penghitung Foul/Pelanggaran</h1>
+
+    <!-- TEAM SECTION -->
+    <div class="container">
+      <div class="team-a">
+        <p class="team-name">TEAM A</p>
+        <p class="number" id="numberA">0</p>
+        <div>
+          <button id="tambah-a" onclick="tambahA()">TAMBAH</button>
+          <button id="simpan-a" onclick="simpanA()">SIMPAN</button>
+        </div>
+        <p id="foul-a">Pelanggaran:</p>
+      </div>
+      <div class="team-b">
+        <p class="team-name">TEAM B</p>
+        <p class="number" id="numberB">0</p>
+        <div>
+          <button id="tambah-b" onclick="tambahB()">TAMBAH</button>
+          <button id="simpan-b" onclick="simpanB()">SIMPAN</button>
+        </div>
+        <p id="foul-b">Pelanggaran:</p>
+      </div>
+    </div>
+
+    <!-- NOTE -->
+    <div class="note-box">
+      <p class="note">
+        Note: Jika pelanggaran sudah dilakukan hingga 6 kali oleh masing-masing
+        tim, maka tim lawan akan diberikan hadiah tendangan pinalti.
+      </p>
+    </div>
+
+    <footer>
+      <p>JUNJUNG TINGGI SPORTIVITAS. NGAJI IYO IBADAH IYO FUTSAL IYO!</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

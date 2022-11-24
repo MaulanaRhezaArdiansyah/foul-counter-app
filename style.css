@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Orbitron:wght@400;800&family=Poppins:wght@200;400;700&family=Silkscreen&family=Sono:wght@300;400;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(bg-foul.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+}
+
+.navbar > p {
+  font-weight: 600;
+  text-shadow: 0 0 5px gray;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 42px;
+  text-shadow: 0 0 10px white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.team-a,
+.team-b {
+  background: rgb(21, 21, 22);
+  color: white;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.team-name {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+.number {
+  margin-top: 0;
+  font-size: 40px;
+}
+
+button {
+  color: white;
+  padding: 15px 25px;
+  margin: 0 9px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:nth-child(1) {
+  background: darkred;
+}
+
+button:nth-child(2) {
+  background: darkgreen;
+}
+
+.note-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: rgb(21, 21, 22);
+  margin-top: 50px;
+}
+
+.note {
+  color: white;
+  font-style: italic;
+}
+
+footer {
+  background: black;
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .team-b {
+    margin-top: 20px;
+  }
+
+  .note {
+    color: white;
+    background: rgb(21, 21, 22);
+    text-align: center;
+    padding: 20px;
+  }
+
+  footer {
+    background: black;
+    color: white;
+    height: 100px;
+    text-align: center;
+  }
+}
